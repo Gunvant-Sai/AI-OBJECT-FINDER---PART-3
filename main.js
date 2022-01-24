@@ -40,7 +40,7 @@ function draw() {
 
     objectDetector = ml5.objectDetector('cocossd', modelLoaded);
     objectDetector.detect(video,gotresult);
-    if(status1_ != "")
+    if(status1 != "")
     {
         if(object.length < 0)
         {
