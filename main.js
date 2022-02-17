@@ -1,5 +1,6 @@
 var video = "";
 var status1 = "";
+var object = [];
 var object_name = "";
 var SpeechRecognition = window.webkitSpeechRecognition;
 var recognition = new SpeechRecognition();
@@ -32,7 +33,7 @@ function gotresult(error,result)
       console.log(error);
   }
     console.log(result);
-    baby= result;
+    object= result;
 }
 
 function draw() {
